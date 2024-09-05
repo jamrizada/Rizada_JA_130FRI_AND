@@ -5,13 +5,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="16dp">
 
-    <!-- ConstraintLayout for the calculator display and buttons -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/calculator_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!-- Display TextView -->
         <TextView
             android:id="@+id/display"
             android:layout_width="0dp"
@@ -28,7 +26,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- Operation Display TextView -->
         <TextView
             android:id="@+id/operation_display"
             android:layout_width="0dp"
@@ -44,7 +41,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/display" />
 
-        <!-- Button grid -->
         <LinearLayout
             android:id="@+id/button_grid"
             android:layout_width="0dp"
@@ -56,7 +52,6 @@
             app:layout_constraintTop_toBottomOf="@id/operation_display"
             app:layout_constraintBottom_toBottomOf="parent">
 
-            <!-- Row 1 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -87,7 +82,6 @@
                     android:layout_margin="4dp" />
             </LinearLayout>
 
-            <!-- Row 2 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -118,7 +112,6 @@
                     android:layout_margin="4dp" />
             </LinearLayout>
 
-            <!-- Row 3 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -149,7 +142,6 @@
                     android:layout_margin="4dp" />
             </LinearLayout>
 
-            <!-- Row 4 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -180,7 +172,6 @@
                     android:layout_margin="4dp" />
             </LinearLayout>
 
-            <!-- Row 5 (Operators) -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -219,7 +210,6 @@
                     android:layout_margin="4dp" />
             </LinearLayout>
 
-            <!-- Row 6 (Additional Buttons) -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
